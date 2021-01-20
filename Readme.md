@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Дмитрий  Воронин](https://up.htmlacademy.ru/htmlcss/30/user/590499).
-* Наставник: `Неизвестно`.
+- Студент: [Дмитрий Воронин](https://up.htmlacademy.ru/htmlcss/30/user/590499).
+- Наставник: `[Никита Сигов](https://htmlacademy.ru/profile/crazer)`.
 
 ---
 
