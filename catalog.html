@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -10,16 +10,16 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body>
+<body class="page-body">
 
-  <header>
-    <nav>
+  <header class="main-header">
+    <nav class="main-navigation">
       <a href="index.html">
         <img src="img/logos/logo.png" width="154" height="64" alt="Логотип магазина мороженого «Глейси»">
       </a>
       <ul>
         <li><a href="#">Каталог</a>
-          <ul>
+          <ul class="site-navigation">
             <li><a href="#">Новинки</a></li>
             <li><a href="catalog.html">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
@@ -34,7 +34,7 @@
         <input type="text" name="search" placeholder="Крем-брюле">
         <a href="#">Поиск</a>
       </form>
-      <a href="#">Вход</a>
+      <a class="login-link" href="#">Вход</a>
       <form action="post">
         <input type="email" name="login" id="login" placeholder="email@example.com">
         <input type="password" name="password" id="password" placeholder="......">
@@ -42,7 +42,7 @@
         <p><a href="#">Новая регистрация</a></p>
         <button type="submit">Войти</button>
       </form>
-      <a href="#">2 товара</a>
+      <a class="cart-link" href="#">2 товара</a>
       <p>
         с 10 до 20, ежедневно
         <a href="tel:+88124502525">8 812 450-25-25</a>
@@ -50,22 +50,22 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
 
-    <ul>
+    <ul class="breadcrumbs">
       <Li><a href="index.html">Главная</a></Li>
       <Li><a href="#">Каталог</a></Li>
-      <Li>Сливочное</Li>
+      <Li class="breadcrumbs-current">Сливочное</Li>
     </ul>
 
-    <h1>Сливочное мороженое</h1>
+    <h1 class="catalog-title">Сливочное мороженое</h1>
 
-    <section>
+    <section class="catalog-filter">
       <h2>Фильтр товаров</h2>
-      <form method="get" action="https://echo.htmlacademy.ru">
+      <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Сортировка:</legend>
-          <select name="sort" id="sort">
+          <select class="filter-sort" name="sort" id="sort">
             <option value="popular">по популярности</option>
             <option value="cheap">сначала недорогие</option>
             <option value="expensive">сначала дорогие</option>
@@ -74,12 +74,12 @@
         </fieldset>
         <fieldset>
           <legend>Цена: 100 ₽ – 500 ₽</legend>
-          <input type="range" min="50" max="100" step="1" value="100">
-          <input type="range" min="50" max="1000" step="1" value="500">
+          <input class="filter-price" type="range" min="50" max="100" step="1" value="100">
+          <input class="filter-price" type="range" min="50" max="1000" step="1" value="500">
         </fieldset>
         <fieldset>
           <legend>Жирность:</legend>
-          <ul>
+          <ul class="filter-fat">
             <li>
               <input type="radio" name="fat-filter" value="0" id="0">
               <label for="0">0%</label>
@@ -100,7 +100,7 @@
         </fieldset>
         <fieldset>
           <legend>Наполнители:</legend>
-          <ul>
+          <ul class="filter-content">
             <li>
               <input type="checkbox" name="choco" id="content-filter-choco" checked>
               <label for="content-filter-choco">шоколадные</label>
@@ -123,14 +123,14 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Применить</button>
+        <button class="filter-button" type="submit">Применить</button>
       </form>
     </section>
 
-    <section>
+    <section class="catalog">
       <h2>Список товаров</h2>
-      <ul>
-        <li>
+      <ul class="catalog-list">
+        <li class="catalog-item">
           <a href="#">
             <p>
               <img src="img/goods/orange-jam.jpg" width="267" height="267"
@@ -141,7 +141,7 @@
           </a>
           <button type="button">Быстрый просмотр</button>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <p>
               <img src="img/goods/creamy-coffee.jpg" width="267" height="267"
@@ -152,7 +152,7 @@
           </a>
           <button type="button">Быстрый просмотр</button>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <p>
               <img src="img/goods/creamy-strawberry.jpg" width="267" height="267"
@@ -163,7 +163,7 @@
           </a>
           <button type="button">Быстрый просмотр</button>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <p>
               <img src="img/goods/caramel.jpg" width="267" height="267"
@@ -174,7 +174,7 @@
           </a>
           <button type="button">Быстрый просмотр</button>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <p>
               <img src="img/goods/lingonberry-jam.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
@@ -184,7 +184,7 @@
           </a>
           <button type="button">Быстрый просмотр</button>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <p>
               <img src="img/goods/blueberry.jpg" width="267" height="267"
@@ -195,7 +195,7 @@
           </a>
           <button type="button">Быстрый просмотр</button>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <p>
               <img src="img/goods/lemon.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
@@ -205,7 +205,7 @@
           </a>
           <button type="button">Быстрый просмотр</button>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <p>
               <img src="img/goods/creamy.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
@@ -215,7 +215,7 @@
           </a>
           <button type="button">Быстрый просмотр</button>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <p>
               <img src="img/goods/vanilla.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
@@ -225,7 +225,7 @@
           </a>
           <button type="button">Быстрый просмотр</button>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <p>
               <img src="img/goods/menthol.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
@@ -235,7 +235,7 @@
           </a>
           <button type="button">Быстрый просмотр</button>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <p>
               <img src="img/goods/black-chocolate.jpg" width="267" height="267"
@@ -246,7 +246,7 @@
           </a>
           <button type="button">Быстрый просмотр</button>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <p>
               <img src="img/goods/mint.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
@@ -258,20 +258,20 @@
         </li>
       </ul>
 
-      <ul>
-        <li>
+      <ul class="page-list">
+        <li class="page-item page-current">
           <a>1</a>
         </li>
-        <li>
+        <li class="page-item">
           <a href="#">2</a>
         </li>
-        <li>
+        <li class="page-item">
           <a href="#">3</a>
         </li>
-        <li>
+        <li class="page-item">
           <a href="#">4</a>
         </li>
-        <li>
+        <li class="page-item">
           <a href="#">5</a>
         </li>
       </ul>
@@ -279,28 +279,39 @@
 
   </main>
 
-  <footer>
-    <ul>
-      <li>
-        <a href="#">Вконтакте</a>
-      </li>
-      <li>
-        <a href="#">Фейсбук</a>
-      </li>
-      <li>
-        <a href="#">Инстаграм</a>
-      </li>
-    </ul>
-    <ul>
-      <li><a href="#">Для поставщиков</a></li>
-      <li><a href="#">Наши документы</a></li>
-      <li><a href="#">О производстве</a></li>
-      <li><a href="#">Экологические стандарты</a></li>
-    </ul>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/logos/logo-academy.png" width="108" height="39" alt="Логотип HTML Academy">
-    </a>
-    <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019</p>
+  <footer class="main-footer">
+    <section class="footer-social">
+      <ul>
+        <li>
+          <a class="social-button" href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a class="social-button" href="#">Вконтакте</a>
+        </li>
+
+        <li>
+          <a class="social-button" href="#">Инстаграм</a>
+        </li>
+        <li>
+          <a class="social-button" href="#">Твиттер</a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-add-info">
+      <ul>
+        <h2>Дополнительная информация</h2>
+        <li><a href="#">Для поставщиков</a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
+    </section>
+    <section class="footer-copyright">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logos/logo-academy.png" width="108" height="39" alt="Логотип HTML Academy">
+      </a>
+      <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019</p>
+    </section>
   </footer>
 
 </body>
