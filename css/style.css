@@ -379,6 +379,10 @@ input {
 .catalog-list {
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 26px;
+  margin-bottom: 40px;
 }
 
 .catalog-item {
