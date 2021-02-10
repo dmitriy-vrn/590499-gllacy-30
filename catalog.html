@@ -105,70 +105,74 @@
     <section class="catalog-filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter-category">
-          <legend>Сортировка:</legend>
-          <select class="filter-sort" name="sort" id="sort">
-            <option value="popular">по популярности</option>
-            <option value="cheap">сначала недорогие</option>
-            <option value="expensive">сначала дорогие</option>
-            <option value="fatness">по жирности</option>
-          </select>
-        </fieldset>
-        <fieldset class="filter-category">
-          <legend>Цена: 100 ₽ – 500 ₽</legend>
-          <div class="filter-wrapper">
-            <input class="filter-price" type="range" min="100" max="500" step="10" value="150">
-            <input class="filter-price" type="range" min="100" max="500" step="10" value="500">
-          </div>
-        </fieldset>
-        <fieldset class="filter-category">
-          <legend>Жирность:</legend>
-          <div class="filter-wrapper">
-            <ul class="filter-fat">
-              <li>
-                <label>
-                  <input type="radio" name="fat-filter" value="0">0%</label>
-              </li>
-              <li>
-                <label><input type="radio" name="fat-filter" value="10" checked>до 10%</label>
-              </li>
-              <li>
-                <label><input type="radio" name="fat-filter" value="30">до 30%</label>
-              </li>
-              <li>
-                <label><input type="radio" name="fat-filter" value="30+">выше 30%</label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="filter-category">
-          <legend>Наполнители:</legend>
-          <div class="filter-wrapper">
-            <ul class="filter-content">
-              <li>
-                <input type="checkbox" name="choco" id="content-filter-choco" checked>
-                <label for="content-filter-choco">шоколадные</label>
-              </li>
-              <li>
-                <input type="checkbox" name="sugar" id="content-filter-sugar" checked>
-                <label for="content-filter-sugar">сахарные присыпки</label>
-              </li>
-              <li>
-                <input type="checkbox" name="fruits" id="content-filter-fruits">
-                <label for="content-filter-fruits">фрукты</label>
-              </li>
-              <li>
-                <input type="checkbox" name="syrup" id="content-filter-syrup">
-                <label for="content-filter-syrup">сиропы</label>
-              </li>
-              <li>
-                <input type="checkbox" name="jam" id="content-filter-jam">
-                <label for="content-filter-jam">джемы</label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <button class="filter-button" type="submit">Применить</button>
+        <div class="filter-first-row">
+          <fieldset class="filter-category category-sort">
+            <legend>Сортировка:</legend>
+            <select class="filter-sort" name="sort" id="sort">
+              <option value="popular">по популярности</option>
+              <option value="cheap">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fatness">по жирности</option>
+            </select>
+          </fieldset>
+          <fieldset class="filter-category category-price">
+            <legend>Цена: 100 ₽ – 500 ₽</legend>
+            <div class="filter-wrapper">
+              <input class="filter-price" type="range" min="100" max="500" step="10" value="150">
+              <input class="filter-price" type="range" min="100" max="500" step="10" value="500">
+            </div>
+          </fieldset>
+          <fieldset class="filter-category category-fat">
+            <legend>Жирность:</legend>
+            <div class="filter-wrapper">
+              <ul class="filter-fat">
+                <li>
+                  <label>
+                    <input type="radio" name="fat-filter" value="0">0%</label>
+                </li>
+                <li>
+                  <label><input type="radio" name="fat-filter" value="10" checked>до 10%</label>
+                </li>
+                <li>
+                  <label><input type="radio" name="fat-filter" value="30">до 30%</label>
+                </li>
+                <li>
+                  <label><input type="radio" name="fat-filter" value="30+">выше 30%</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+        <div class="filter-second-row">
+          <fieldset class="filter-category category-content">
+            <legend>Наполнители:</legend>
+            <div class="filter-wrapper">
+              <ul class="filter-content">
+                <li>
+                  <input type="checkbox" name="choco" id="content-filter-choco" checked>
+                  <label for="content-filter-choco">шоколадные</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="sugar" id="content-filter-sugar" checked>
+                  <label for="content-filter-sugar">сахарные присыпки</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="fruits" id="content-filter-fruits">
+                  <label for="content-filter-fruits">фрукты</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="syrup" id="content-filter-syrup">
+                  <label for="content-filter-syrup">сиропы</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="jam" id="content-filter-jam">
+                  <label for="content-filter-jam">джемы</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <button class="filter-button" type="submit">Применить</button>
+        </div>
       </form>
     </section>
 

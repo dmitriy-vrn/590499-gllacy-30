@@ -691,6 +691,18 @@ input {
   font-weight: 400;
 }
 
+.breadcrumbs-list {
+  display: flex;
+}
+
+.breadcrumbs-list li {
+  margin-right: 22px;
+}
+
+.breadcrumbs-list li:last-child {
+  margin-right: 0;
+}
+
 .breadcrumbs-list a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -702,6 +714,17 @@ input {
 
 /* Filter */
 
+.filter-first-row {
+  max-width: 869px;
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.filter-second-row {
+  max-width: 869px;
+  display: flex;
+}
+
 .filter-form legend {
   font-size: 14px;
   line-height: 16px;
@@ -710,6 +733,22 @@ input {
 
 .filter-category {
   border: none;
+}
+
+.category-sort {
+  max-width: 196px;
+}
+
+.category-price {
+  max-width: 218px;
+}
+
+.category-fat {
+  max-width: 425px;
+}
+
+.category-content {
+  max-width: 711px;
 }
 
 .filter-wrapper,
@@ -729,12 +768,22 @@ input {
   color: var(--basic-extra-dark);
 }
 
+.filter-fat {
+  display: flex;
+}
+
 .filter-fat input {
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 50%;
 }
 
+.filter-content {
+  display: flex;
+}
+
 .filter-button {
+  height: 36px;
+  align-self: center;
   background: rgba(255, 255, 255, 0.2);
   border: 2px solid var(--basic-white);
   border-radius: 20px;
@@ -756,6 +805,11 @@ input {
 }
 
 /* Paginator */
+
+.paginator-list {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .paginator-item a {
   display: block;
