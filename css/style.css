@@ -133,6 +133,7 @@ input {
 }
 
 .site-navigation {
+  display: flex;
   line-height: 18px;
   font-weight: 700;
   outline: 5px solid rgba(0, 255, 255, 0.3);
@@ -210,6 +211,10 @@ input {
   font-weight: 500;
   outline: 5px solid rgba(255, 0, 255, 0.3);
   outline-offset: -5px;
+}
+
+.user-list {
+  display: flex;
 }
 
 .user-item > a {
@@ -450,6 +455,15 @@ input {
   padding: 24px 20px;
 }
 
+.features-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 21px;
+}
+
 .features-title {
   font-size: 24px;
   line-height: 30px;
@@ -507,15 +521,21 @@ input {
   height: 100%;
   background: var(--basic-light);
   margin: 0;
-  padding: 29px 16px 35px 20px;
+  padding: 25px 16px 35px 20px;
+  border-radius: 16px;
 }
 
 .mailing-desc {
   margin: 0 0 46px;
 }
 
+.mailing-form {
+  display: flex;
+}
+
 .mailing-form input {
   max-width: 368px;
+  margin-right: 10px;
 }
 
 .mailing-form button {
@@ -530,6 +550,7 @@ input {
 
 .contacts-wrapper {
   position: relative;
+  margin-bottom: 18px;
 }
 
 .contacts-info {
@@ -577,6 +598,18 @@ input {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.social-list {
+  display: flex;
+}
+
+.social-item {
+  margin-right: 8px;
+}
+
+.social-item:last-child {
+  margin-right: 0;
+}
+
 .social-button svg {
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -597,6 +630,10 @@ input {
 
 .footer-info {
   justify-self: center;
+}
+
+.footer-list-wrapper {
+  display: flex;
 }
 
 .footer-info-list {
