@@ -45,9 +45,23 @@
 .site-wrapper {
   min-width: 940px;
   background-color: var(--bg-light);
-  background-image: url(/img/slider/cream-raspberry.png);
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.site-wrapper-1 {
+  background-color: var(--bg-light);
+  background-image: url(/img/slider/cream-raspberry.png);
+}
+
+.site-wrapper-2 {
+  background-color: var(--bg-neutral);
+  background-image: url(/img/slider/chocolate-lemon.png);
+}
+
+.site-wrapper-3 {
+  background-color: var(--bg-dark);
+  background-image: url(/img/slider/plombir-strawberry.png);
 }
 
 a {
@@ -681,7 +695,6 @@ input {
 }
 
 .news-mailing-wrapper {
-  height: 100%;
   background: var(--basic-light);
   margin: 0;
   padding: 25px 16px 35px 20px;
@@ -750,11 +763,6 @@ input {
 }
 
 /* Footer */
-
-.main-footer {
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
-}
 
 .main-footer-container {
   display: grid;
@@ -847,6 +855,11 @@ input {
 
 /* Catalog  */
 
+.current-page {
+  background: var(--hover-extra-dark);
+  border-radius: 20px;
+}
+
 .user-item .cart-active {
   background: var(--basic-white);
   color: var(--basic-extra-dark);
@@ -864,6 +877,22 @@ input {
 
 .breadcrumbs-list li {
   margin-right: 22px;
+  position: relative;
+}
+
+.breadcrumbs-list li::before {
+  content: "";
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(/img/breadcrumbs.svg);
+  width: 6px;
+  height: 6px;
+}
+
+.breadcrumbs-list li:last-child::before {
+  display: none;
 }
 
 .breadcrumbs-list li:last-child {
@@ -872,6 +901,12 @@ input {
 
 .breadcrumbs-list a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs-list a:hover,
+.breadcrumbs-list a:focus {
+  color: var(--hover-dark);
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
 .catalog-title {
