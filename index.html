@@ -61,7 +61,8 @@
                       <path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z"
                         fill="#fff" />
                     </svg>
-                    <span>Вход</span></a>
+                    <span>Вход</span>
+                  </a>
                   <div class="login-form">
                     <form action="#" method="post">
                       <input class="user-login" type="email" name="login" id="login" placeholder="email@example.com">
@@ -79,9 +80,10 @@
                 <li class="user-item cart-item">
                   <a class="cart-link" href="#">
                     <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M5.7 2l-.24-2H0v2h3.67l1.5 13H19.3L21 2H5.7zm11.8 11H6.97l-1-9h12.72l-1.19 9zM7.03 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM16.1 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2z"
+                      <path class="basket-stroke"
+                        d="M7.03 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM16.1 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM5.7 2l-.24-2H0v2h3.67l1.5 13H19.3L21 2H5.7zm11.8 11H6.97l-1-9h12.72l-1.19 9z"
                         fill="#fff" />
+                      <path class="basket-fill" d="M5.94 4.03L6.97 13H17.5l1.2-8.97H5.93z" fill="none" />
                     </svg>
                     <span>Пусто</span>
                   </a>
@@ -122,9 +124,9 @@
         </ul>
 
         <div class="slider-controls">
-          <button class="current" type="button" aria-label="Первый слайд"></button>
-          <button type="button" aria-label="Второй слайд"></button>
-          <button type="button" aria-label="Третий слайд"></button>
+          <button class="slider-btn-one current" type="button" aria-label="Первый слайд"></button>
+          <button class="slider-btn-two" type="button" aria-label="Второй слайд"></button>
+          <button class="slider-btn-three" type="button" aria-label="Третий слайд"></button>
         </div>
 
       </section>
@@ -153,45 +155,51 @@
       <section class="catalog">
         <h2 class="visually-hidden">Хиты продаж!</h2>
         <ul class="catalog-list">
-          <li class="catalog-item hit-offer">
-            <a href="#">
-              <p class="catalog-img">
-                <img src="img/goods/orange-jam.jpg" width="267" height="267"
-                  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              </p>
+          <li class="hit-offer">
+            <div class="catalog-item-overlay">
+              <a class="button" href="#">Быстрый просмотр</a>
+            </div>
+            <div class="catalog-item">
+              <img class="catalog-img" src="img/goods/orange-jam.jpg" width="267" height="267"
+                alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               <p class="catalog-price">310 ₽<span>/кг</span></p>
-              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-            </a>
+              <h3><a class="product-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+            </div>
+
           </li>
-          <li class="catalog-item hit-offer">
-            <a href="#">
-              <p class="catalog-img">
-                <img src="img/goods/creamy-coffee.jpg" width="267" height="267"
-                  alt="Сливочно-кофейное с кусочками шоколада">
-              </p>
+          <li class="hit-offer">
+            <div class="catalog-item-overlay">
+              <a class="button" href="#">Быстрый просмотр</a>
+            </div>
+
+            <div class="catalog-item">
+              <img class="catalog-img" src="img/goods/creamy-coffee.jpg" width="267" height="267"
+                alt="Сливочно-кофейное с кусочками шоколада">
               <p class="catalog-price">380 ₽<span>/кг</span></p>
-              <h3>Сливочно-кофейное с кусочками шоколада</h3>
-            </a>
+              <h3><a class="product-title" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+            </div>
           </li>
-          <li class="catalog-item hit-offer">
-            <a href="#">
-              <p class="catalog-img">
-                <img src="img/goods/creamy-strawberry.jpg" width="267" height="267"
-                  alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              </p>
+          <li class="hit-offer">
+            <div class="catalog-item-overlay">
+              <a class="button" href="#">Быстрый просмотр</a>
+            </div>
+            <div class="catalog-item">
+              <img class="catalog-img" src="img/goods/creamy-strawberry.jpg" width="267" height="267"
+                alt="Сливочно-клубничное с присыпкой из белого шоколада">
               <p class="catalog-price">355 ₽<span>/кг</span></p>
-              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-            </a>
+              <h3><a class="product-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+            </div>
           </li>
-          <li class="catalog-item hit-offer">
-            <a href="#">
-              <p class="catalog-img">
-                <img src="img/goods/caramel.jpg" width="267" height="267"
-                  alt="Сливочное крем-брюле с карамельной подливкой">
-              </p>
+          <li class="hit-offer">
+            <div class="catalog-item-overlay">
+              <a class="button" href="#">Быстрый просмотр</a>
+            </div>
+            <div class="catalog-item">
+              <img class="catalog-img" src="img/goods/caramel.jpg" width="267" height="267"
+                alt="Сливочное крем-брюле с карамельной подливкой">
               <p class="catalog-price">415 ₽<span>/кг</span></p>
-              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
-            </a>
+              <h3><a class="product-title" href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+            </div>
           </li>
         </ul>
       </section>
@@ -247,27 +255,27 @@
 
       <section class="contacts">
         <h2 class="visually-hidden">Как нас найти?</h2>
-
+        <div class="contacts-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1048.9818643424915!2d30.322259217488618!3d59.93878450846092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614095872190!5m2!1sru!2sru"
+            width="100%" height="430" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="contacts-info">
+            <p class="contacts-address">Адрес главного офиса и офлайн-магазина:<br>
+              <span> ул. Большая Конюшенная,<br> 19/8, Санкт-Петербург</span>
+            </p>
+            <p class="contacts-order">Для заказов по телефону:<br>
+              <a class="contacts-phone" href="tel:88124502525">8 812 450-25-25</a><br>
+              (с 10 до 20 ежедневно)
+            </p>
+            <a class="button feedback-btn" href="#">Форма обратной связи</a>
+          </div>
+        </div>
 
       </section>
 
     </main>
 
-    <div class="contacts-wrapper">
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad31bbefc8b1f99e3bddd260ae5c2339dd305a1ab7f19dc7f9e55619f30d63824&amp;source=constructor"
-        width="100%" height="400" frameborder="0"></iframe>
-      <div class="contacts-info">
-        <p class="contacts-address">Адрес главного офиса и офлайн-магазина:<br>
-          <span> ул. Большая Конюшенная,<br> 19/8, Санкт-Петербург</span>
-        </p>
-        <p class="contacts-order">Для заказов по телефону:<br>
-          <a class="contacts-phone" href="tel:88124502525">8 812 450-25-25</a><br>
-          (с 10 до 20 ежедневно)
-        </p>
-        <a class="button feedback-btn" href="#">Форма обратной связи</a>
-      </div>
-    </div>
+
 
     <footer class="main-footer">
       <div class="container">
@@ -348,6 +356,32 @@
       </div>
     </footer>
   </div>
+
+  <section class="modal modal-login">
+    <div class="modal-wrapper">
+      <h2>Мы обязательно вам ответим!</h2>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="login-modal">Имя и фамилия</label>
+          <input class="modal-input-name" type="text" name="login-modal" id="login-modal" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="visually-hidden" for="emai;-modal">email</label>
+          <input class="modal-input-email" type="email" name="email-modal" id="email-modal"
+            placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="visually-hidden" for="modal-comment">Добавьте комментарий</label>
+          <textarea name="comment" id="modal-comment" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </div>
+  </section>
+
+  <script src="/js/login.js"></script>
+  <script src="/js/slider.js"></script>
 </body>
 
 </html>
