@@ -892,7 +892,7 @@ input {
 .contacts-info {
   position: absolute;
   top: 62px;
-  right: 27px;
+  right: 0;
   max-width: 303px;
   background: var(--basic-extra-light);
   border-radius: 16px;
