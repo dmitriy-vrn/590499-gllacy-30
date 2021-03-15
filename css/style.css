@@ -515,7 +515,7 @@ input {
 
 .slider {
   position: relative;
-  padding-top: 264px;
+  padding-top: 276px;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -879,6 +879,10 @@ input {
 }
 
 /* Contacts */
+
+.map {
+  margin-bottom: 14px;
+}
 
 .contacts {
   margin-bottom: 18px;
