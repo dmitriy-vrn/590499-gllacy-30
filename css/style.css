@@ -155,6 +155,7 @@ input {
 .main-navigation-wrapper {
   display: grid;
   grid-template-columns: max-content 1fr 1fr;
+  margin-bottom: 14px;
 }
 
 .site-navigation {
@@ -378,7 +379,7 @@ input {
 
 .cart-link {
   display: flex;
-  padding: 6px 16px;
+  padding: 6px 18px;
   border-radius: 20px;
   background-image: url(../img/cart.svg);
   justify-content: space-between;
@@ -500,6 +501,8 @@ input {
 .user-info {
   text-align: right;
   font-weight: 700;
+  margin-right: 4px;
+  margin-top: 16px;
 }
 
 .user-info-time {
@@ -515,9 +518,9 @@ input {
 
 .slider {
   position: relative;
-  padding-top: 276px;
+  padding-top: 260px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .slider-list {
@@ -602,7 +605,7 @@ input {
 .banner {
   max-width: 560px;
   border-radius: 16px;
-  padding: 16px 22px 22px 16px;
+  padding: 21px 22px 26px 16px;
 }
 
 .promo-item-left {
@@ -692,7 +695,7 @@ input {
 }
 
 .catalog-img {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   border-radius: 50%;
 }
 
@@ -753,7 +756,7 @@ input {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 21px;
+  margin-top: 14px;
 }
 
 .features-title {
@@ -825,6 +828,12 @@ input {
   grid-gap: 26px;
 }
 
+.news-descr {
+  margin: 0;
+  max-width: 288px;
+  margin-left: 4px;
+}
+
 .news-item {
   max-height: 220px;
 }
@@ -844,7 +853,11 @@ input {
 }
 
 .news-title {
+  margin: 0;
+  margin-left: 5px;
+  margin-bottom: 3px;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .news-mailing {
@@ -881,6 +894,8 @@ input {
 /* Contacts */
 
 .map {
+  width: 100%;
+  height: 430px;
   margin-bottom: 14px;
 }
 
@@ -896,8 +911,8 @@ input {
 .contacts-info {
   position: absolute;
   top: 62px;
-  right: 0;
-  max-width: 303px;
+  right: 0px;
+  width: 303px;
   background: var(--basic-extra-light);
   border-radius: 16px;
   color: var(--basic-extra-dark);
@@ -905,21 +920,37 @@ input {
   z-index: 300;
 }
 
-.contacts-info p {
+.contacts-address-title,
+.contacts-phone-title,
+.contacts-phone {
   font-size: 14px;
   line-height: 20px;
 }
 
+.contacts-address-title {
+  margin: 0;
+  padding: 0;
+  max-width: 180px;
+  margin-bottom: -2px;
+}
+
+.contacts-phone-title {
+  margin: 0;
+  margin-bottom: 2px;
+}
+
 .contacts-address {
-  margin: 0 0 30px 0;
+  margin: 0;
+  margin-bottom: 22px;
 }
 
-.contacts-order {
-  margin: 0 0 30px;
-}
-
-.contacts-address span,
 .contacts-phone {
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.contacts-address,
+.contacts-phone a {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -976,6 +1007,11 @@ input {
 .footer-info-list {
   font-size: 13px;
   line-height: 18px;
+  padding: 0;
+}
+
+.footer-info-list + .footer-info-list {
+  margin-left: 34px;
 }
 
 .footer-info-item {
@@ -1013,6 +1049,11 @@ input {
   font-size: 12px;
   line-height: 18px;
   justify-self: end;
+  margin-right: 5px;
+}
+
+.made-in {
+  margin: 0;
 }
 
 .made-in a {
@@ -1094,7 +1135,7 @@ input {
 }
 
 .filter-second-row legend {
-  margin-bottom: 11px;
+  margin-bottom: 7px;
 }
 
 .filter-first-row {
@@ -1240,6 +1281,7 @@ input {
   display: block;
   cursor: pointer;
   user-select: none;
+  margin-top: 2px;
 }
 
 .filter-radio:hover label::after {
@@ -1254,7 +1296,7 @@ input {
   content: "";
   position: absolute;
   left: -33px;
-  top: 0;
+  top: -2px;
   width: 22px;
   height: 22px;
   border: 4px solid rgba(255, 255, 255, 0.8);
@@ -1264,7 +1306,7 @@ input {
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 5px;
   left: -26px;
   width: 8px;
   height: 8px;
@@ -1350,7 +1392,11 @@ input {
 .paginator-list {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 48px;
+  margin-bottom: 51px;
+}
+
+.paginator-item + .paginator-item {
+  margin-right: 3px;
 }
 
 .paginator-item a {
