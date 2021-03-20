@@ -1022,7 +1022,7 @@ img {
   position: absolute;
   width: 1200px;
   height: 430px;
-  top: -1px;
+  top: 3px;
   right: 0;
   z-index: 0;
 }
