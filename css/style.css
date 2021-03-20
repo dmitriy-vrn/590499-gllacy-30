@@ -283,7 +283,7 @@ img {
 }
 
 .sub-list .sub-item:focus-within:not(.sub-item-current),
-.sub-list .sub-item:hover {
+.sub-list .sub-item:hover:not(.sub-item-current) {
   background: var(--hover-light);
 }
 
