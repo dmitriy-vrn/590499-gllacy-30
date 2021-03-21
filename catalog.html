@@ -88,65 +88,67 @@
                 </svg>
                 <span>2 товара</span>
               </a>
-              <div class="cart-contain">
-                <table class="cart-table">
-                  <caption class="visually-hidden">Товары в корзине:</caption>
-                  <thead class="visually-hidden">
-                    <tr>
-                      <td>Удалить мороженое из корзины</td>
-                      <td>Изображение мороженого</td>
-                      <td>Название мороженого</td>
-                      <td>Вес мороженого</td>
-                      <td>Стоимость мороженого</td>
-                    </tr>
-                  </thead>
-                  <tbody class="cart-table-body">
-                    <tr>
-                      <td class="cart-table-item">
-                        <button class="cart-delete" type="button" aria-label="Удалить мороженое из корзины">
-                        </button>
-                      </td>
-                      <td class="cart-table-item">
-                        <img class="cart-icecream-img" src="img/orange-cart.jpg" width="33" height="33"
-                          alt="Иконка мороженого с апельсиновым джемом в корзине">
-                      </td>
-                      <td class="cart-table-item">
-                        Пломбир с апельсиновым джемом
-                      </td>
-                      <td class="cart-table-item">1,5 кг х <span class="icecream-cost">200 руб.</span>
-                      </td>
-                      <td>300 руб.</td>
-                    </tr>
-                    <tr>
-                      <td class="cart-table-item">
-                        <button class="cart-delete" type="button" aria-label="Удалить мороженое из корзины">
-                        </button>
-                      </td>
-                      <td class="cart-table-item">
-                        <img class="cart-icecream-img" src="img/strawberry-cart.jpg"
-                          alt="Иконка клубничного пломбира в корзине" width="33" height="33">
-                      </td>
-                      <td class="cart-table-item">
-                        Клубничный пломбир с присыпкой из белого шоколада
-                      </td>
-                      <td class="cart-table-item">1,5 кг х <span class="icecream-cost">300 руб.</span>
-                      </td>
-                      <td class="cart-table-item">450 руб.</td>
-                    </tr>
-                  </tbody>
-                  <tfoot class="cart-footer">
-                    <tr class="cart-total-cost">
-                      <td class="cart-table-item total-cost-value" colspan="5">Итого: <span>750 руб.</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="cart-table-item" colspan="5">
-                        <a class="button" href="#">Оформить заказ</a>
-                      </td>
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
+
+              <table class="cart-contain cart-table">
+                <caption class="visually-hidden">Товары в корзине:</caption>
+                <thead class="visually-hidden">
+                  <tr>
+                    <td>Удалить мороженое из корзины</td>
+                    <td>Изображение мороженого</td>
+                    <td>Название мороженого</td>
+                    <td>Вес мороженого</td>
+                    <td>Стоимость мороженого</td>
+                  </tr>
+                </thead>
+                <tbody class="cart-table-body">
+                  <tr>
+                    <td class="cart-table-item cart-table-del cart-del-fr">
+                      <button class="cart-delete" type="button" aria-label="Удалить мороженое из корзины">
+                      </button>
+                    </td>
+                    <td class="cart-table-item cart-table-icecream cart-icecream-fr">
+                      <img class="cart-icecream-img" src="img/orange-cart.jpg" width="33" height="33"
+                        alt="Иконка мороженого с апельсиновым джемом в корзине">
+                    </td>
+                    <td class="cart-table-item cart-table-label cart-label-fr">
+                      Пломбир с апельсиновым джемом
+                    </td>
+                    <td class="cart-table-item cart-table-value cart-value-fr">1,5 кг х <span class="icecream-cost">200
+                        руб.</span>
+                    </td>
+                    <td class="cart-cost cart-cost-fr">300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td class="cart-table-item cart-table-del cart-del-sr">
+                      <button class="cart-delete" type="button" aria-label="Удалить мороженое из корзины">
+                      </button>
+                    </td>
+                    <td class="cart-table-item cart-table-icecream">
+                      <img class="cart-icecream-img" src="img/strawberry-cart.jpg"
+                        alt="Иконка клубничного пломбира в корзине" width="33" height="33">
+                    </td>
+                    <td class="cart-table-item cart-table-label cart-label-sr">
+                      Клубничный пломбир с присыпкой из белого шоколада
+                    </td>
+                    <td class="cart-table-item cart-table-value cart-value-sr">1,5 кг х <span class="icecream-cost">300
+                        руб.</span>
+                    </td>
+                    <td class="cart-cost cart-cost-sr">450 руб.</td>
+                  </tr>
+                </tbody>
+                <tfoot class="cart-footer">
+                  <tr class="cart-total-cost">
+                    <td class="cart-table-item total-cost-value" colspan="5">Итого: <span>750 руб.</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">
+                      <a class="button cart-button" href="#">Оформить заказ</a>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+
             </li>
           </ul>
           <div class="user-info">
@@ -168,7 +170,6 @@
     </ul>
 
     <h1 class="catalog-title">Сливочное мороженое</h1>
-
     <section class="catalog-filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
@@ -216,12 +217,12 @@
               </li>
               <li class="filter-fat-item filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio" type="radio" name="fat-filter" value="10"
-                  id="ten-percent" checked disabled>
+                  id="ten-percent" checked>
                 <label class="filter-radio-title" for="ten-percent">до 10%</label>
               </li>
               <li class="filter-fat-item filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio" type="radio" name="fat-filter" value="30"
-                  id="thirty-percnet" disabled>
+                  id="thirty-percnet">
                 <label class="filter-radio-title" for="thirty-percnet">до 30%</label>
               </li>
               <li class="filter-fat-item filter-option filter-radio">
